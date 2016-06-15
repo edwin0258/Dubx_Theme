@@ -2,6 +2,7 @@
 body{
   font-family: Montserrat, sans-serif;
 }
+/* HEADER */
 #header-global .header-left-navigation{
   font-family: bungee, sans-serif;
   text-shadow:1px 1px black, 2px 2px white;
@@ -19,6 +20,21 @@ body{
 #header-global .header-donate a{
   display:none;
 }
+/* MAIN */
+.right_section{
+	margin:0px !important;
+	padding:0px !important;
+	
+	display:absolute;
+}
+section #main_player{
+	background-color:#247BA0;
+	border-radius:2px !important;
+}
+
+
+
+/* FOOTER AREA */
 .progressBg{
   background: linear-gradient(190deg, #FF1654,#247BA0) !important;
 }
