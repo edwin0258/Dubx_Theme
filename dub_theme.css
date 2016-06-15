@@ -1,5 +1,6 @@
+@import 'https://fonts.googleapis.com/css?family=Pattaya';
 #header-global .header-left-navigation{
-  font-family:lobster, sans-serif;
+  font-family: 'Pattaya', sans-serif;
 }
 #header-global .header-donate a{
   display:none;
