@@ -1,7 +1,49 @@
-@import 'https://fonts.googleapis.com/css?family=Pattaya';
+@import 'https://fonts.googleapis.com/css?family=Bungee|Montserrat';
+body{
+  font-family: Montserrat, sans-serif;
+}
 #header-global .header-left-navigation{
-  font-family: 'Pattaya', sans-serif;
+  font-family: bungee, sans-serif;
+  text-shadow:1px 1px black, 2px 2px white;
+  box-sizing:border-box;
+}
+#header-global{
+  
+  box-shadow:0px 5px 10px rgba(0,0,0,.5);
+}
+#header-global a{
+
+}
+#header-global .header-right-navigation span{
 }
 #header-global .header-donate a{
   display:none;
+}
+.progressBg{
+  background: linear-gradient(190deg, #FF1654,#247BA0) !important;
+}
+#player-controller .right ul li .dubup.voted span {
+    color: #F3FFBD;
+
+}
+#player-controller .right ul li .dubup.voted {
+	background: #247BA0;
+	box-shadow:inset 4px 4px 30px rgba(255,255,255,.4),
+	 inset -4px -4px 30px rgba(0,0,0,.4);
+}
+
+#player-controller .right ul li .add-to-playlist-button.grabbed span .grab-counter{
+    line-height:10px;
+    color:blue;
+}
+.icon-heart:before{
+    content: "\2605";
+    color: #FF337B;
+    font-size:20px;
+    
+}
+#player-controller .right ul li .add-to-playlist-button.grabbed {
+    background: #FFFFFF;
+    box-shadow:inset 4px 4px 30px rgba(255,255,255,.4),
+	 inset -4px -4px 30px rgba(0,0,0,.4);
 }
