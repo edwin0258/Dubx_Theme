@@ -27,24 +27,58 @@ body{
 	
 	display:absolute;
 }
-section #main_player{
-	background-color:#247BA0;
-	border-radius:2px !important;
-}
 
+section #main_player, .chat-container, #main_avatar_room, #chat{
+	box-shadow:inset 0px 0px 0px 5px rgba(36,123,160,.3),
+	 inset 0px 0px 10px 10px black;
+	border-radius:2px;
+}
+/* CHAT CONTAINER */
+.chat_tools{
+	margin-left:5px;
+	margin-top:5px;
+	width:calc(100% - 5px) !important; 
+}
+.chat_tools span{
+	background-color:rgba(178,219,191,.2);
+	
+
+}
+/* CHAT ELEMENTS */
+.chat-system-joined{
+	color:#ff1654 !important;
+	text-shadow:1px 1px rgba(255,255,255,.3);
+	text-align:center;
+	
+	border-style: dashed;
+	height:20px;
+    border-width: 2px 0px 2px 0px;
+    border-color:rgba(200,200,200,.3);
+}
 
 
 /* FOOTER AREA */
 .progressBg{
-  background: linear-gradient(190deg, #FF1654,#247BA0) !important;
+  background: #F3FFBD !important;
+  height:7px !important; 
 }
 #player-controller .right ul li .dubup.voted span {
     color: #F3FFBD;
 
 }
-#player-controller .right ul li .dubup.voted {
+#player-controller .right ul li .dubdown.voted span{
+    color: #F3FFBD !important;
+
+}
+#player-controller .right ul li .dubup.voted{
 	background: #247BA0;
-	box-shadow:inset 4px 4px 30px rgba(255,255,255,.4),
+	box-shadow:inset 4px 4px 30px rgba(255,255,255,.3),
+	 inset -4px -4px 30px rgba(0,0,0,.4);
+}
+#player-controller .right ul li .dubdown.voted{
+	background: #FF1654;
+	color:#F3FFBD;
+	box-shadow:inset 4px 4px 30px rgba(255,255,255,.3),
 	 inset -4px -4px 30px rgba(0,0,0,.4);
 }
 
