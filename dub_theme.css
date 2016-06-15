@@ -1,3 +1,6 @@
 #header-global .header-left-navigation{
-  background-color:#247BA0;
+  font-family:lobster, sans-serif;
+}
+#header-global .header-donate a{
+  display:none;
 }
