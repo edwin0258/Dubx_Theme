@@ -7,9 +7,10 @@ body{
   font-family: bungee, sans-serif;
   text-shadow:1px 1px black, 2px 2px white;
   box-sizing:border-box;
+  
 }
 #header-global{
-  
+  background:#1c1c1f;
   box-shadow:0px 5px 10px rgba(0,0,0,.5);
 }
 #header-global a{
@@ -21,28 +22,83 @@ body{
   display:none;
 }
 /* MAIN */
-.right_section{
+#main-room{
 	margin:0px !important;
 	padding:0px !important;
+
+}
+#main-section{
+	width:100% !important;
+
+}
+.right_section{
+	height:calc(100vh - 113px) !important;
+	margin:57px 0px 0px 0px !important;
+	padding:0px !important;
+	clear:both !important;
+	left:0px !important;
+	width:30vw !important;
+}
+#main-room{
+	padding:0px 0px !important;
+
+}
+section #main_player, iframe{
+	height:calc(100vh - 195px) !important;
+}
+.player_sharing{
+	margin:0px !important;
+	position:absolute;
+	padding:0px !important;
+	height:100px;
+	top:-40px;
+	left:300px;
 	
-	display:absolute;
+}
+.play-song-link-container{
+	display:none;
+}
+.player_header{
+	margin:0px !important;
+	background-color:black;
+	height:50px;
+	top:-50px !important;
+	padding:0px !important;
+}
+.player_header span{
+	height:50px;
+	padding-top:15px !important;
+	box-sizing:border-box;
+}
+.displayVideo-el,.display-queue,.room-info-display,.skip-el{
+	border-radius:0px !important;
+}
+.main-player-wrapper{
+	all:unset !important;
+}
+.left_section{
+	height:calc(100vh - 190px) !important;
+	margin:57px 0px 0px 0px !important;
+	float:right !important;
+	left:calc(30vw + 10px) !important;
+	width:calc(70vw - 20px) !important;
+	padding:50px 0px !important;
 }
 
 section #main_player, .chat-container, #main_avatar_room, #chat{
-	box-shadow:inset 0px 0px 0px 5px rgba(36,123,160,.3),
+	background:black;
+	box-shadow:inset 0px 0px 0px 5px #1c1c1f,
 	 inset 0px 0px 10px 10px black;
 	border-radius:2px;
+}
+#player-controller{
+	background:#323438 !important;
 }
 /* CHAT CONTAINER */
 .chat_tools{
 	margin-left:5px;
 	margin-top:5px;
-	width:calc(100% - 5px) !important; 
-}
-.chat_tools span{
-	background-color:rgba(178,219,191,.2);
-	
-
+	width:calc(100% - 5px) !important;
 }
 /* CHAT ELEMENTS */
 .chat-system-joined{
@@ -60,7 +116,7 @@ section #main_player, .chat-container, #main_avatar_room, #chat{
 /* FOOTER AREA */
 .progressBg{
   background: #F3FFBD !important;
-  height:7px !important; 
+  height:7px !important;
 }
 #player-controller .right ul li .dubup.voted span {
     color: #F3FFBD;
