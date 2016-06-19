@@ -11,7 +11,7 @@ body{
     	width:100% !important;
     	padding-top:50px !important;
     }
-    body iframe{
+    body #main_player iframe{
     	margin-top:70px ;
     }
 }
@@ -56,7 +56,7 @@ body{
 	padding:0px 0px !important;
 
 }
-section #main_player, iframe{
+section #main_player, #main_player iframe{
 	height:calc(100vh - 195px) !important;
 }
 .player_sharing{
