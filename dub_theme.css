@@ -2,6 +2,19 @@
 body{
   font-family: Montserrat, sans-serif;
 }
+/*Fix Later */
+@media only screen and (max-width: 1150px){
+   html #main-section .left_section{
+ 		all:unset !important;
+ 		clear:both !important;
+ 		position:relative;
+    	width:100% !important;
+    	padding-top:50px !important;
+    }
+    body iframe{
+    	margin-top:70px ;
+    }
+}
 /* HEADER */
 #header-global .header-left-navigation{
   font-family: bungee, sans-serif;
@@ -76,13 +89,13 @@ section #main_player, iframe{
 .main-player-wrapper{
 	all:unset !important;
 }
-.left_section{
-	height:calc(100vh - 190px) !important;
-	margin:57px 0px 0px 0px !important;
-	float:right !important;
-	left:calc(30vw + 10px) !important;
-	width:calc(70vw - 20px) !important;
-	padding:50px 0px !important;
+#main-section .left_section{
+	height:calc(100vh - 190px);
+	margin:57px 0px 0px 0px;
+	float:right;
+	left:calc(30vw + 10px);
+	width:calc(70vw - 20px);
+	padding:50px 0px;
 }
 
 section #main_player, .chat-container, #main_avatar_room, #chat{
@@ -124,7 +137,24 @@ section #main_player, .chat-container, #main_avatar_room, #chat{
     border-color:rgba(200,200,200,.3);
 }
 
-
+.co-owner .username, .co-owner .user-role{
+	color:#EF233C !important;
+}
+.manager .username, .manager .user-role{
+	color:#F25F5C !important;
+}
+.mod .username, .mod .user-role{
+	color:#247BA0 !important;
+}
+.vip .username, .vip .user-role{
+	color:#70C1B3 !important;
+}
+#new-messages-counter{
+	padding-bottom:10px !important;
+	opacity:1 !important;
+	background:rgba(239,35,60,.5) !important;
+	color:white !important;
+}
 /* FOOTER AREA */
 .progressBg{
   background: #F25F5C !important;
@@ -169,6 +199,14 @@ section #main_player, .chat-container, #main_avatar_room, #chat{
 }
 
 /* DUBX */
-.for_content.ps-container.ps-theme-default.ps-active-y{
-	background:rgba(0,0,0,.8);
+.for_content.ps-container{
+	background:rgba(0,0,0,.8) !important;
+}
+
+
+.usercontent{
+	background: linear-gradient(rgba(255,255,255,.2),white), url("https://i.ytimg.com/vi/4EcFQM46Ze0/maxresdefault.jpg") center;
+.global-actions{
+	background:rgba(50,52,56,.3) !important;
+	color:white !important;
 }
