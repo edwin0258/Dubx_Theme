@@ -51,8 +51,8 @@ section #main_player, iframe{
 	position:absolute;
 	padding:0px !important;
 	height:100px;
-	top:-40px;
-	left:300px;
+	top:-37px;
+	left:280px;
 	
 }
 .play-song-link-container{
@@ -87,7 +87,7 @@ section #main_player, iframe{
 
 section #main_player, .chat-container, #main_avatar_room, #chat{
 	background:black;
-	box-shadow:inset 0px 0px 0px 5px #1c1c1f,
+	box-shadow:inset 0px 0px 0px 5px #0d0d0f,
 	 inset 0px 0px 10px 10px black;
 	border-radius:2px;
 }
@@ -98,7 +98,19 @@ section #main_player, .chat-container, #main_avatar_room, #chat{
 .chat_tools{
 	margin-left:5px;
 	margin-top:5px;
+	border:none !important;
 	width:calc(100% - 5px) !important;
+}
+.chat_tools span{
+	box-shadow: inset 0px -2px 0px #0d0d0f;
+}
+.pusher-chat-widget-input{
+	border:none !important;
+	box-shadow:inset 0px 4px 0px #0d0d0f;
+}
+.ps-scrollbar-y{
+	width:4px !important;
+
 }
 /* CHAT ELEMENTS */
 .chat-system-joined{
@@ -115,8 +127,10 @@ section #main_player, .chat-container, #main_avatar_room, #chat{
 
 /* FOOTER AREA */
 .progressBg{
-  background: #F3FFBD !important;
-  height:7px !important;
+  background: #F25F5C !important;
+  height:56px !important;
+  z-index:-1;
+  transition:all 2s;
 }
 #player-controller .right ul li .dubup.voted span {
     color: #F3FFBD;
@@ -152,4 +166,9 @@ section #main_player, .chat-container, #main_avatar_room, #chat{
     background: #FFFFFF;
     box-shadow:inset 4px 4px 30px rgba(255,255,255,.4),
 	 inset -4px -4px 30px rgba(0,0,0,.4);
+}
+
+/* DUBX */
+.for_content.ps-container.ps-theme-default.ps-active-y{
+	background:rgba(0,0,0,.8);
 }
