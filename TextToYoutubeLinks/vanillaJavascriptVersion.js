@@ -18,3 +18,6 @@ console.log(db) // [object] form
 // comment out which version you don't want
 console.log(db.reduce(function(arr,x,i){arr.push([x.name,x.type,x.link])
 return arr},[])) // multi-dim array form
+
+console.log(db.map(x => 'Name: ' + x.name + '\n link: ' + x.link + '\n').join(''))
+// plain text format
