@@ -9,9 +9,18 @@ fs.readFile('stuff.txt','utf-8',function(err, data){
     }
   //replace name="name" with name="slug" if problems.
     db = data.toString()
-.split(/host_id">(.*?)<|name="name">(.*?)</g)
+.split(/host_id">(.*?)<|name="name">(.*?)<|name="is_banned">(.*?)</g)
 	.filter(function(x){ return x !== undefined})
 	.filter(function(x,i){if(i % 2 == 1) return x})
+	.reduce(function(obj,x,i,arr){
+		if(i % 3 == 2){
+			if(x != 1){
+			obj.push(arr[i-2],arr[i-1])
+			}
+		
+		}
+		return obj
+	},[])
 	.reduce(function(obj,x,i,arr){
 		if(i % 2 == 1)
 			(/^\d+$/g.test(arr[i])) ?
